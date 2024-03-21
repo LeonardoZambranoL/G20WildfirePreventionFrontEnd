@@ -20,31 +20,19 @@ export default function Page() {
   return (
     <>
       <div className="w-full">
-        <div className="grid grid-cols-12">
-          <div className="hidden md:flex bg-[url('/Fuego.jpg')] bg-cover w-full h-screen bg-no-repeat col-span-6">
-            <span className="text-secondary text-center container font-bold text-1xl md:text-2xl lg:text-3xl mt-96 w-2/3">
-              <Typewriter
-                options={{ loop: true, delay: 45, deleteSpeed: 0 }}
-                onInit={(typewriter: any) => {
-                  for (let s of fireFacts) {
-                    typewriter.typeString(s);
-                    typewriter.pauseFor(100);
-                    typewriter.deleteAll();
-                  }
-                  typewriter.start();
-                }}
-              />
-            </span>
-          </div>
-          <div className="hidden md:block bg-[url('/Rainforest.jpg')] bg-cover w-full h-screen bg-no-repeat col-span-6">
-            <div className="flex flex-col gap-5 mt-80">
-              <span className="text-secondary text-center container font-bold text-5xl md:text-6xl lg:text-7xl w-2/3">
-                <h1> What is we cared more?</h1>
+        <div className="md:grid md:grid-cols-12">
+          <div className="bg-cover w-full md:h-screen bg-no-repeat sm:w-full md:col-span-6">
+            <div className="flex flex-col gap-5 md:mt-80">
+              <span className="text-center container font-bold text-5xl md:text-6xl lg:text-7xl w-full md:w-2/3 drop-shadow-2xl">
+                <h1> What if we cared more?</h1>
               </span>
-              <span className="text-secondary text-center container font-bold text-xl md:text-2xl lg:text-4xl w-2/3">
+              <span className="text-center container font-bold text-xl md:text-2xl lg:text-4xl w-full md:w-2/3 drop-shadow-2xl mb-10">
                 <h1> Join us to see how destructive wild fires truly are. </h1>
               </span>
             </div>
+          </div>
+          <div className="md:col-span-6 p-5 flex flex-row justify-center">
+            <div className="bg-[url('/Fuego.jpg')] bg-cover w-2/3 h-3/4 bg-no-repeat self-center"></div>
           </div>
         </div>
       </div>
