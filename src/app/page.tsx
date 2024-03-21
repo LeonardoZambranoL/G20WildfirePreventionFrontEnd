@@ -31,7 +31,7 @@ export default function Page() {
               <div className="flex flex-col gap-2">
                 <span className="w-full text-center container font-bold text-1xl md:text-2xl lg:text-3xl">
                   <Typewriter
-                    options={{ loop: true, delay: 70 }}
+                    options={{ loop: true, delay: 45, deleteSpeed: 0 }}
                     onInit={(typewriter: any) => {
                       for (let s of fireFacts) {
                         typewriter.typeString(s);
@@ -48,8 +48,9 @@ export default function Page() {
             <div className="w-full flex flex-row justify-center mt-96">
               <span className="w-full text-center container font-bold text-1xl md:text-2xl lg:text-3xl">
                 <Typewriter
-                  options={{ loop: true, delay: 70 }}
+                  options={{ loop: true, delay: 45, deleteSpeed: 0 }}
                   onInit={(typewriter: any) => {
+                    typewriter.pauseFor(1000);
                     for (let s of livingFacts) {
                       typewriter.typeString(s);
                       typewriter.pauseFor(100);
@@ -64,15 +65,19 @@ export default function Page() {
         </div>
         <div className="flex md:hidden bg-[url('/Cristo.png')] bg-cover w-full h-[190px] bg-no-repeat" />
         <div className="flex flex-row align-center mb-5">
-          <span className="w-full text-center container font-bold text-xl md:text-2xl lg:text-5xl">
-            But oportunities without correct execution or well targeted investment
+          <span className="hidden md:flex w-full text-center container font-bold text-xl md:text-2xl lg:text-5xl">
+            Opportunities without correct execution or well targeted investment
+            will not last
+          </span>
+          <span className="flex md:hidden w-full text-center container font-bold text-xl md:text-2xl lg:text-5xl">
+            But opportunities without correct execution or well targeted investment
             will not last
           </span>
         </div>
         <div className="w-full flex flex-row justify-center">
           <span className="w-full text-center container font-bold text-lg">
             <Typewriter
-              options={{ loop: true, delay: 70 }}
+              options={{ loop: true, delay: 45, deleteSpeed: 0 }}
               onInit={(typewriter: any) => {
                 for (let s of livingFacts) {
                   typewriter.typeString(s);
