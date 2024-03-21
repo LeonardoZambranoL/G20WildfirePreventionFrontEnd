@@ -3,5 +3,5 @@ type Props = {
 };
 
 export default function KibanaIframe({ src }: Props) {
-  return <iframe src={src} className="w-full h-full" />;
+  return <iframe src={src} className="w-full min-h-[200px]" />;
 }
