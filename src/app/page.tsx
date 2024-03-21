@@ -5,9 +5,9 @@ import Typewriter from "typewriter-effect";
 
 export default function Page() {
   const fireFacts = [
-    "26.4 million acres (10.7 million hectares) of Brazil's Amazon rainforest burned in 2023 .-rainforestfoundation.org",
+    "26.4 million acres of Brazil's Amazon rainforest burned in 2023 .-rainforestfoundation.org",
     "An area the size of the state of Tennessee burned in the Brazilian Amazon in 2023 .-rainforestfoundation.org",
-    "On average close to 1 million trees are still being chopped down or burned every day in the Amazon. Countless more died because of the drought, and this will worsen the degradation of the forest .-rainforestfoundation.org",
+    "close to 1 million trees are still being chopped down or burned every day in the Amazon. [...] this will worsen the degradation of the forest .-rainforestfoundation.org",
     "[...] Massive smoke plumes drifted thousands of miles [...] settled over Brazil's largest city, blocking out the sun .-rainforestfoundation.org",
     "Despite international pressures, the situation has continued to deteriorate .-rainforestfoundation.org",
     "[...] leading to catastrophic consequences for the global climate and life on Earth. .-rainforestfoundation.org",
@@ -19,75 +19,33 @@ export default function Page() {
 
   return (
     <>
-      <div className="mt-5 container">
-        <div className="flex flex-row align-center mb-5">
-          <span className="w-full text-center container font-bold text-3xl md:text-4xl lg:text-7xl">
-            A Land of Opportunities
-          </span>
-        </div>
-        <div className="hidden md:flex bg-[url('/Cristo.png')] bg-cover w-full h-[800px] bg-no-repeat">
-          <div className="container grid grid-cols-3">
-            <div className="w-full flex flex-row justify-center mt-96">
-              <div className="flex flex-col gap-2">
-                <span className="w-full text-center container font-bold text-1xl md:text-2xl lg:text-3xl">
-                  <Typewriter
-                    options={{ loop: true, delay: 45, deleteSpeed: 0 }}
-                    onInit={(typewriter: any) => {
-                      for (let s of fireFacts) {
-                        typewriter.typeString(s);
-                        typewriter.pauseFor(100);
-                        typewriter.deleteAll();
-                      }
-                      typewriter.start();
-                    }}
-                  />
-                </span>
-              </div>
-            </div>
-            <div></div>
-            <div className="w-full flex flex-row justify-center mt-96">
-              <span className="w-full text-center container font-bold text-1xl md:text-2xl lg:text-3xl">
-                <Typewriter
-                  options={{ loop: true, delay: 45, deleteSpeed: 0 }}
-                  onInit={(typewriter: any) => {
-                    typewriter.pauseFor(1000);
-                    for (let s of livingFacts) {
-                      typewriter.typeString(s);
-                      typewriter.pauseFor(100);
-                      typewriter.deleteAll();
-                    }
-                    typewriter.start();
-                  }}
-                />
+      <div className="w-full">
+        <div className="grid grid-cols-12">
+          <div className="hidden md:flex bg-[url('/Fuego.jpg')] bg-cover w-full h-screen bg-no-repeat col-span-6">
+            <span className="text-secondary text-center container font-bold text-1xl md:text-2xl lg:text-3xl mt-96 w-2/3">
+              <Typewriter
+                options={{ loop: true, delay: 45, deleteSpeed: 0 }}
+                onInit={(typewriter: any) => {
+                  for (let s of fireFacts) {
+                    typewriter.typeString(s);
+                    typewriter.pauseFor(100);
+                    typewriter.deleteAll();
+                  }
+                  typewriter.start();
+                }}
+              />
+            </span>
+          </div>
+          <div className="hidden md:block bg-[url('/Rainforest.jpg')] bg-cover w-full h-screen bg-no-repeat col-span-6">
+            <div className="flex flex-col gap-5 mt-80">
+              <span className="text-secondary text-center container font-bold text-5xl md:text-6xl lg:text-7xl w-2/3">
+                <h1> What is we cared more?</h1>
+              </span>
+              <span className="text-secondary text-center container font-bold text-xl md:text-2xl lg:text-4xl w-2/3">
+                <h1> Join us to see how destructive wild fires truly are. </h1>
               </span>
             </div>
           </div>
-        </div>
-        <div className="flex md:hidden bg-[url('/Cristo.png')] bg-cover w-full h-[190px] bg-no-repeat" />
-        <div className="flex flex-row align-center mb-5">
-          <span className="hidden md:flex w-full text-center container font-bold text-xl md:text-2xl lg:text-5xl">
-            Opportunities without correct execution or well targeted investment
-            will not last
-          </span>
-          <span className="flex md:hidden w-full text-center container font-bold text-xl md:text-2xl lg:text-5xl">
-            But opportunities without correct execution or well targeted investment
-            will not last
-          </span>
-        </div>
-        <div className="w-full flex flex-row justify-center">
-          <span className="w-full text-center container font-bold text-lg">
-            <Typewriter
-              options={{ loop: true, delay: 45, deleteSpeed: 0 }}
-              onInit={(typewriter: any) => {
-                for (let s of livingFacts) {
-                  typewriter.typeString(s);
-                  typewriter.pauseFor(100);
-                  typewriter.deleteAll();
-                }
-                typewriter.start();
-              }}
-            />
-          </span>
         </div>
       </div>
     </>
