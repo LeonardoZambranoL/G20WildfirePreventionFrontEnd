@@ -10,7 +10,7 @@ const lorem =
 
 export default function FiveProneAreas() {
   const srcs = [
-    "https://de.wikipedia.org/wiki/rat",
+    "http://172.208.114.118:5601/app/dashboards#/view/34b78ad0-e75e-11ee-8ca9-914f9ddcd9b8?embed=true&_g=(filters%3A!()%2Cquery%3A(language%3Akuery%2Cquery%3A'')%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15y%2Cto%3Anow))&hide-filter-bar=true",
     "https://de.wikipedia.org/wiki/mouse",
     "https://de.wikipedia.org/wiki/bat",
     "https://de.wikipedia.org/wiki/fox",

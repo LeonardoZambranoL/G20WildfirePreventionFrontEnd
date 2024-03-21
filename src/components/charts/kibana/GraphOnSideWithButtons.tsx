@@ -47,7 +47,10 @@ export default function GraphOnSide({
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-full">
             {buttonDescriptions.map((description, index) => (
-              <DropdownMenuItem className="w-full" key={`dopdown ${title} ${index}`}>
+              <DropdownMenuItem
+                className="w-full"
+                key={`dopdown ${title} ${index}`}
+              >
                 <Button
                   className="w-full"
                   onClick={() => {
@@ -66,13 +69,19 @@ export default function GraphOnSide({
   );
   const graphWithMenu = (
     <>
-      <div className="flex flex-col gap-2">
-        <KibanaIframe src={srcs[index]} />
-        {buttonDescriptions.length != 0 && dropdownGraphOptions}
+      <div className="flex flex-row justify-center">
+        <div className="flex flex-col gap-2 minh-h-[800px] w-2/3">
+          <KibanaIframe src={srcs[index]} />
+          {buttonDescriptions.length != 0 && dropdownGraphOptions}
+        </div>
       </div>
     </>
   );
-  const description = <div className="p-5">{descriptionChanges ? descriptions[index] : descriptions[0]}</div>;
+  const description = (
+    <div className="p-5">
+      {descriptionChanges ? descriptions[index] : descriptions[0]}
+    </div>
+  );
   const leftFormat = (
     <>
       {graphWithMenu}
