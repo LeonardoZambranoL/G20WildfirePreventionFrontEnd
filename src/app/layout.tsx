@@ -1,7 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-full h-full">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      </head>
+      <body /*className="w-full h-full"*/>
         <Navbar />
         <div>{children}</div>
       </body>

@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
  
-@layer base {
+/*@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
@@ -33,7 +33,7 @@
     --ring: 20 14.3% 4.1%;
  
     --radius: 0.5rem;
-  }
+  } 
  
   .dark {
     --background: 20 14.3% 4.1%;
@@ -73,4 +73,25 @@
   body {
     @apply bg-background text-foreground;
   }
+} */
+
+.navbarLogo{
+  color: white;
+  background-color: black;
+  font-weight:bolder;
+  display:flex;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItems{
+  width: max-content;
+}
+
+.navItems:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
