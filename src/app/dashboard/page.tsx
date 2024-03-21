@@ -17,11 +17,11 @@ export default function Page() {
   ];
   const firstRow = (
     <>
-      <div className="grid grid-cols-12 min-h-96">
-        <div className="p-2 col-span-7 bg-black">
+      <div className="lg:grid lg:grid-cols-12 min-h-80">
+        <div className="p-2 col-span-7 bg-secondary">
           <KibanaIframe src={srcs[0]} />
         </div>
-        <div className="p-2 col-span-5 bg-red-700">
+        <div className="p-2 col-span-5 bg-secondary">
           <KibanaIframe src={srcs[1]} />
         </div>
       </div>
@@ -29,15 +29,15 @@ export default function Page() {
   );
   const secondRow = (
     <>
-      <div className="grid grid-cols-12 min-h-96">
-        <div className="p-2 col-span-6 bg-amber-300">
+      <div className="lg:grid lg:grid-cols-12 min-h-80">
+        <div className="p-2 col-span-6 bg-secondary">
           <KibanaIframe src={srcs[2]} />
         </div>
-        <div className="col-span-6 grid grid-cols-12">
-          <div className="p-2 col-span-6 bg-orange-800">
+        <div className="col-span-6 lg:grid lg:grid-cols-12">
+          <div className="p-2 col-span-6 bg-secondary">
             <KibanaIframe src={srcs[3]} />
           </div>
-          <div className="p-2 col-span-6 bg-lime-900">
+          <div className="p-2 col-span-6 bg-secondary">
             <KibanaIframe src={srcs[4]} />
           </div>
         </div>
@@ -46,16 +46,16 @@ export default function Page() {
   );
   const thirdRow = (
     <>
-      <div className="grid grid-cols-12 min-h-96">
-        <div className="col-span-6 grid grid-cols-12">
-          <div className="p-2 col-span-6 bg-orange-800">
+      <div className="lg:grid lg:grid-cols-12 min-h-80">
+        <div className="col-span-6 lg:grid lg:grid-cols-12">
+          <div className="p-2 col-span-6 bg-secondary">
             <KibanaIframe src={srcs[5]} />
           </div>
-          <div className="p-2 col-span-6 bg-lime-900">
+          <div className="p-2 col-span-6 bg-secondary">
             <KibanaIframe src={srcs[6]} />
           </div>
         </div>
-        <div className="p-2 col-span-6 bg-amber-300">
+        <div className="p-2 col-span-6 bg-secondary">
           <KibanaIframe src={srcs[7]} />
         </div>
       </div>
