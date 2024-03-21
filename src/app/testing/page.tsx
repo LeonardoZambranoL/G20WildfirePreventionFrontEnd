@@ -42,10 +42,3 @@ export default function Page() {
     </>
   );
 }
-
-//<div className="w-full h-[400px]">
-//<BarchartTest data={getBarData()} />
-//</div>
-//<div className="w-full h-[400px]">
-//  <LineChartTest data={getLineData()} />
-//</div>
