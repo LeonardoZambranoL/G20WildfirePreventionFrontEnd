@@ -42,6 +42,14 @@ function Navbar() {
                 Demografic Impact
               </Link>
             </div>
+            <div className="flex flex-row gap-7 items-center justify-center">
+              <Link
+                href={"/dashboard"}
+                className={`hover:text-gray-300 align-middle font-semibold`}
+              >
+                Dashboard
+              </Link>
+            </div>
           </div>
         </div>
         <div className="flex lg:hidden">

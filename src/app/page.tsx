@@ -11,10 +11,14 @@ export default function Page() {
         <div className="bg-[url('/Cristo.png')] bg-cover w-full h-[800px] bg-no-repeat">
           <div className="container grid grid-cols-3">
             <div className="w-full flex flex-row align-middle">
-              <h1>hi1</h1>
+              <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl">
+                hi1
+              </h1>
             </div>
             <div></div>
-            <div>hi2</div>
+            <div className="font-bold text-2xl md:text-4xl lg:text-5xl">
+              hi2
+            </div>
           </div>
         </div>
       </div>

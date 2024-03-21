@@ -1,6 +1,6 @@
 import BarchartTest from "@/components/charts/BarChartTest";
 import LineChartTest from "@/components/charts/LineChartTest";
-import GraphOnSide from "@/components/charts/kibana/GraphOnSide";
+import GraphOnSide from "@/components/charts/kibana/GraphOnSideWithButtons";
 import KibanaIframe from "@/components/charts/kibana/IFrame";
 import { getBarData, getLineData } from "@/lib/temp";
 import Image from "next/image";
