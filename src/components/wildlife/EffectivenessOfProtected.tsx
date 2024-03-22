@@ -12,7 +12,7 @@ const lorem =
 export default function EffectivnessOfProtected() {
   const srcs = [
     "/protected/protected.png",
-    "/burnt/2005.png",
+    "/burnt/2003.png",
     "/roads/state_roads.png",
   ];
   const buttonDescriptions: string[] = [

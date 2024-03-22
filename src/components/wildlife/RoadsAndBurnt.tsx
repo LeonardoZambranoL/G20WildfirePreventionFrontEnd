@@ -11,7 +11,7 @@ const lorem =
 
 export default function RoadsAndBurnt() {
   const srcs = [
-    "/burnt/2005.png",
+    "/burnt/2003.png",
     "/roads/federal_roads.png",
     "/roads/state_roads.png",
   ];

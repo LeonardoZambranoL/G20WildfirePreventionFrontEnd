@@ -31,7 +31,7 @@ function Navbar() {
                 href={"/demography"}
                 className={`hover:text-gray-300 align-middle font-semibold`}
               >
-                Demografic Impact
+                Demografic Factor
               </Link>
             </div>
             <div className="flex flex-row gap-7 items-center justify-center">

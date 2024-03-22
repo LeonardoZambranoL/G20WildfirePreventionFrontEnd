@@ -11,7 +11,6 @@ const lorem =
 
 export default function FiveProneAreas() {
   const srcs = [
-    "/burnt/2003.png",
     "/burnt/2004.png",
     "/burnt/2005.png",
     "/burnt/2006.png",
