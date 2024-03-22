@@ -22,7 +22,7 @@ export default function RoadsAndBurnt() {
   return (
     <>
       <GalleryWithButtons
-        title="Correlatiom between available roads and burnt areas"
+        title="Road availability"
         photos={srcs}
         buttonDescriptions={buttonDescriptions}
         descriptions={descriptions}

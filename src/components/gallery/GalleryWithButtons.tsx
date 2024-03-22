@@ -111,7 +111,9 @@ export default function GalleryWithButtons({
                     height={600}
                   />
                 </div>
-                <div className="col-span-7">{description}</div>
+                <div className="col-span-7 flex flex-col justify-center">
+                  {description}
+                </div>
               </div>
             </div>
           </CardContent>

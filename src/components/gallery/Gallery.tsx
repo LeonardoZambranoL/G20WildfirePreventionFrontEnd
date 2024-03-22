@@ -46,7 +46,7 @@ const Gallery = ({ title, photos, interval, description }: Props) => {
                 height={600}
               />
             </div>
-            <div className="w-full col-span-7 hidden lg:flex lg:flex-row lg:gap-2 lg:justify-end">
+            <div className="w-full col-span-7 flex flex-col justify-center">
               {description}
             </div>
           </CardContent>
