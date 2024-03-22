@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex flex-row gap-10">
           <Link href="/" className="flex flex-row gap-3">
             <div>
-              <span className="text-2xl font-bold">G20</span>
+              <span className="text-2xl font-bold">G20: 404</span>
             </div>
           </Link>
           <div className="hidden lg:flex lg:flex-row gap-10">
