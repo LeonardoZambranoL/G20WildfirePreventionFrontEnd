@@ -102,7 +102,7 @@ export default function GalleryWithButtons({
           </CardHeader>
           <CardContent className="w-full">
             <div className="w-full">
-              <div className="grid grid-cols-12">
+              <div className="w-full flex flex-col md:grid md:grid-cols-12">
                 <div className="col-span-5">
                   <Image
                     src={photos[index]}
@@ -110,6 +110,7 @@ export default function GalleryWithButtons({
                     width={600}
                     height={600}
                   />
+                  {buttonDescriptions.length != 0 && dropdownGraphOptions}
                 </div>
                 <div className="col-span-7 flex flex-col justify-center">
                   {description}

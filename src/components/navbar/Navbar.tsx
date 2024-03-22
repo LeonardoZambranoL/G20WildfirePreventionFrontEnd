@@ -58,18 +58,10 @@ function Navbar() {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  href={"/economy"}
-                  className={`hover:text-gray-300 align-middle font-semibold`}
-                >
-                  Economic Impact
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
                   href={"/demography"}
                   className={`hover:text-gray-300 align-middle font-semibold`}
                 >
-                  Demografic Impact
+                  Demografic factor
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>

@@ -37,8 +37,8 @@ const Gallery = ({ title, photos, interval, description }: Props) => {
               <span className="w-full text-center">{title}</span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="w-full grid grid-cols-12">
-            <div className="col-span-5">
+          <CardContent className="w-full flex flex-col md:grid md:grid-cols-12">
+            <div className="w-full md:col-span-5">
               <Image
                 src={photos[currentPhotoIndex]}
                 alt={`Photo ${currentPhotoIndex}`}
@@ -46,7 +46,7 @@ const Gallery = ({ title, photos, interval, description }: Props) => {
                 height={600}
               />
             </div>
-            <div className="w-full col-span-7 flex flex-col justify-center">
+            <div className="w-full md:col-span-7 flex flex-col justify-center">
               {description}
             </div>
           </CardContent>

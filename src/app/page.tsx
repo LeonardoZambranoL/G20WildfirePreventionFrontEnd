@@ -20,6 +20,7 @@ export default function Page() {
   return (
     <>
       <div className="w-full">
+        <div className="block md:hidden h-10 w-full"></div>
         <div className="md:grid md:grid-cols-12">
           <div className="bg-cover w-full md:h-screen bg-no-repeat sm:w-full md:col-span-6">
             <div className="flex flex-col gap-5 md:mt-80">
@@ -32,7 +33,9 @@ export default function Page() {
             </div>
           </div>
           <div className="md:col-span-6 p-5 flex flex-row justify-center">
-            <div className="bg-[url('/Fuego.jpg')] bg-cover w-2/3 h-3/4 bg-no-repeat self-center"></div>
+            <div className="bg-[url('/Fuego.jpg')] bg-cover w-full md:w-2/3 md:h-3/4 bg-no-repeat self-center">
+              <div className="block md:hidden h-96 w-full"></div>
+            </div>
           </div>
         </div>
       </div>
