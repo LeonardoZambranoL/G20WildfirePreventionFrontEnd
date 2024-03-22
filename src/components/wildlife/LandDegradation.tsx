@@ -34,7 +34,7 @@ export default function LandDegradation() {
     "/burnt/2022.png",
   ];
   const buttonDescriptions: string[] = [];
-  const descriptions = [`${lorem} only`];
+  const description = `${lorem} only`;
   return (
     <>
       <Gallery
