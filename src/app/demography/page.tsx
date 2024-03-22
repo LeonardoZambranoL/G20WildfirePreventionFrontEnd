@@ -20,9 +20,7 @@ const lorem =
 export default function Page() {
   return (
     <>
-      <PossibleMigration />
       <MostAffectedPopulations />
-      <DemographyPredictions />
     </>
   );
 }

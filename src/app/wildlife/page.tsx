@@ -22,7 +22,6 @@ export default function Page() {
       <EffectivnessOfProtected />
       <EvidenceOfThreat />
       <LandDegradation />
-      <WildlifePredictions />
     </>
   );
 }

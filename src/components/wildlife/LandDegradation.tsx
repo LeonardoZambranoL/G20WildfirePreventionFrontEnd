@@ -11,34 +11,35 @@ const lorem =
 
 export default function LandDegradation() {
   const srcs = [
-    "/burnt/2002.png",
-    "/burnt/2003.png",
-    "/burnt/2004.png",
-    "/burnt/2005.png",
-    "/burnt/2006.png",
-    "/burnt/2007.png",
-    "/burnt/2008.png",
-    "/burnt/2009.png",
-    "/burnt/2010.png",
-    "/burnt/2011.png",
-    "/burnt/2012.png",
-    "/burnt/2013.png",
-    "/burnt/2014.png",
-    "/burnt/2015.png",
-    "/burnt/2016.png",
-    "/burnt/2017.png",
-    "/burnt/2018.png",
-    "/burnt/2019.png",
-    "/burnt/2020.png",
-    "/burnt/2021.png",
-    "/burnt/2022.png",
+    "/landcover/2002.png",
+    "/landcover/2003.png",
+    "/landcover/2004.png",
+    "/landcover/2005.png",
+    "/landcover/2006.png",
+    "/landcover/2007.png",
+    "/landcover/2008.png",
+    "/landcover/2009.png",
+    "/landcover/2010.png",
+    "/landcover/2011.png",
+    "/landcover/2012.png",
+    "/landcover/2013.png",
+    "/landcover/2014.png",
+    "/landcover/2015.png",
+    "/landcover/2016.png",
+    "/landcover/2017.png",
+    "/landcover/2018.png",
+    "/landcover/2019.png",
+    "/landcover/2020.png",
+    "/landcover/2021.png",
+    "/landcover/2022.png",
   ];
   const buttonDescriptions: string[] = [];
-  const description = `${lorem} only`;
+  const description =
+    "The provided images show the land coverage of brasil. Each color represents something different. Blue areas on the top left correspond to the Amazon Rain Forest, yellow areas to savanas and orange/red ones to human settlements. From this visualizations we can see how the Rain Forest has evolved and changed over the course of years. We can see for example that the forest shrinks, specially around the Mapitoba region (east of the rain forest)";
   return (
     <>
       <Gallery
-        title="Prone areas to wild fires in Brasil"
+        title="Land degradation and land coverage"
         photos={srcs}
         interval={500}
         description={description}

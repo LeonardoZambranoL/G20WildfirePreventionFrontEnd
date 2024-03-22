@@ -6,7 +6,7 @@ type Props = {
 
 export default function KibanaIframe({ src }: Props) {
   return (
-    <Card>
+    <Card className="w-full h-full">
       <Iframe
         url={src}
         height="320px"
