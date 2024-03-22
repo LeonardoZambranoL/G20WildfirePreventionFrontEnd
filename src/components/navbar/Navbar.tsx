@@ -28,14 +28,6 @@ function Navbar() {
             </div>
             <div className="flex flex-row gap-7 items-center justify-center">
               <Link
-                href={"/economy"}
-                className={`hover:text-gray-300 align-middle font-semibold`}
-              >
-                Economic Impact
-              </Link>
-            </div>
-            <div className="flex flex-row gap-7 items-center justify-center">
-              <Link
                 href={"/demography"}
                 className={`hover:text-gray-300 align-middle font-semibold`}
               >

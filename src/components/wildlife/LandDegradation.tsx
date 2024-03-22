@@ -35,7 +35,7 @@ export default function LandDegradation() {
   ];
   const buttonDescriptions: string[] = [];
   const description =
-    "The images provided depict the land coverage of Brazil, with distinct colors representing different types of terrain. In this visualization, the blue areas in the top left correspond to the expansive Amazon Rainforest, while yellow areas represent savannas, and orange/red tones indicate human settlements. Through these visualizations, we gain valuable insights into the dynamic evolution of the Amazon Rainforest over time. A notable observation is the gradual shrinkage of the rainforest, particularly evident around the Mapitoba region situated to the east of the rainforest. This trend underscores the ongoing environmental changes and human encroachment affecting this vital ecosystem. As the rainforest diminishes in size, it highlights the urgent need for sustainable conservation efforts to preserve this globally significant biodiversity hotspot.";
+    "The images show Brazil's land coverage, with different colors representing various terrains. The blue areas represent the vast Amazon Rainforest, while yellow depicts savannas, and orange/red tones indicate human settlements. These visuals reveal insights into the Amazon Rainforest's changing landscape over time. A notable observation is its gradual shrinkage, especially evident around the Mapitoba region to the east. This trend underscores ongoing environmental changes and human encroachment impacting this vital ecosystem. As the rainforest diminishes, it emphasizes the urgent need for sustainable conservation efforts to preserve its globally significant biodiversity.";
   return (
     <>
       <Gallery
