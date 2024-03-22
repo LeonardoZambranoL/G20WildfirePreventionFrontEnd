@@ -20,7 +20,6 @@ export default function Page() {
       <RoadsAndBurnt />
       <FiveProneAreas />
       <EffectivnessOfProtected />
-      <EvidenceOfThreat />
       <LandDegradation />
     </>
   );

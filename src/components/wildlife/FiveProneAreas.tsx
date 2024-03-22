@@ -33,7 +33,7 @@ export default function FiveProneAreas() {
   ];
 
   const description =
-    "Even though the Data may vary from year to year, some patterns are to be recognised. For example, the areas of Corumbá, Mato Grosso do Soul have never stopped burning during the 20 years accross which the data was collected. The are of labrea, altough small has a huge incendiary activity. This is also of special concern as this is part of the Amazonas Rain Forest. Southern areas of Pará have also been centers of constant wildfires. Apuí (Also Amazonas) has also been a center of multiple of wildfires, specially starting 2019.";
+    "While the specific data on wildfires may fluctuate year by year, certain consistent patterns emerge. Notably, areas like Corumbá in Mato Grosso do Sul have exhibited uninterrupted fire activity over the 20-year span of data collection. Similarly, despite its relatively small size, Labrea has experienced significant incendiary activity, a worrisome trend considering its location within the Amazon Rainforest. Further south, regions in Pará have emerged as persistent hotspots for wildfires, with ongoing fire occurrences. Apuí, situated in the state of Amazonas, has also emerged as a focal point for multiple wildfires, particularly intensifying from the year 2019 onward. These observations underscore the urgent need for targeted intervention and proactive measures to mitigate the impact of wildfires in these vulnerable regions.";
   return (
     <Gallery
       title="Prone areas to wild fires in Brasil"

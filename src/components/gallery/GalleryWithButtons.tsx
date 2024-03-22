@@ -76,7 +76,6 @@ export default function GalleryWithButtons({
   );
   const description = (
     <div className="p-5">
-      aaa
       {descriptionChanges ? descriptions[index] : descriptions[0]}
     </div>
   );
